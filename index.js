@@ -95,6 +95,11 @@ function gameLoop(attempt) {
     messages.textContent = "";
     messages.style.color = "#00852aff";
     messages.textContent = `Rätt! Siffran var ${ans}`;
+  } else if (hearts === 0 && attempt === ans) {
+    hearts = 5;
+    messages.textContent = "";
+    messages.style.color = "#00852aff";
+    messages.textContent = `Rätt! Siffran var ${ans}`;
   }
   displayHearts(hearts);
 }
