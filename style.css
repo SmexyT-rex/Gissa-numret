@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-image: url(Untitled-1.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff9b0; /* soft yellow */
+  font-family: "Comic Sans MS", cursive, sans-serif; /* playful font */
+  overflow-y: hidden;
+}
+
+/* Game container */
+.game {
+  background-color: #afccff; /* light pinkish beige */
+  border: 4px solid #000000; /* bright pink border */
+  border-radius: 15px; /* rounded corners */
+  padding: 2rem 8rem 3rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* All children spacing */
+.game * {
+  margin-top: 1rem;
+}
+
+/* Input field */
+.inputField {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: 5px solid #000000;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.hearts h1 {
+  text-align: center;
+}
+
+/* Guess button */
+.jsButton {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.jsButton:hover {
+  background-color: #000000;
+  transform: scale(1.1);
+}
+
+/* Difficulty buttons container */
+.diffButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Difficulty buttons */
+.diffButtons button {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Individual difficulty colors */
+.easyBtn {
+  background-color: #7bed9f; /* green */
+}
+
+.easyBtn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.normalBtn {
+  background-color: #f9ca24; /* yellow */
+}
+
+.normalBtn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.hardBtn {
+  background-color: #ff6b6b; /* red */
+}
+
+.hardBtn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Message text */
+.textField {
+  font-weight: bold;
+  color: #000000; /* green */
+  min-height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
